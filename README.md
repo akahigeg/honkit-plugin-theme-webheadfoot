@@ -5,6 +5,17 @@
 - Footer
 - Responsive
 
+## HTML構造 page.html
+- .book
+  - .book_inner
+    - .book-header
+    - .page
+      - .page_inner
+        - .page-header
+        - .page-body
+    - .book-footer
+
+
 ## License
 
 Apache License
