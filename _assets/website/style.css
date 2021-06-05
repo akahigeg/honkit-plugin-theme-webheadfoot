@@ -2294,8 +2294,7 @@
 .book-header {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: visible;
-  height: 50px;
-  padding: 0 8px;
+  padding: 0 20px;
   z-index: 2;
   font-size: 0.85em;
   color: #7e888b;
@@ -2327,22 +2326,8 @@
   margin: 0;
   font-size: 20px;
   font-weight: 200;
-  text-align: center;
   line-height: 50px;
-  opacity: 0;
-  -webkit-transition: opacity ease 0.4s;
-  -moz-transition: opacity ease 0.4s;
-  -o-transition: opacity ease 0.4s;
-  transition: opacity ease 0.4s;
-  padding-left: 200px;
-  padding-right: 200px;
-  -webkit-transition: opacity 0.2s ease;
-  -moz-transition: opacity 0.2s ease;
-  -o-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  color: #333;
 }
 .book-header h1 a,
 .book-header h1 a:hover {
@@ -2365,6 +2350,12 @@
 }
 .book.is-loading .book-header h1 a {
   display: none;
+}
+.book-header h2 {
+  color: #333;
+  font-size: 24px;
+  line-height: 50px;
+  color: #333;
 }
 @media print {
   .book-header {
@@ -2804,7 +2795,6 @@
 .markdown-section h5,
 .markdown-section h6 {
   margin-top: 1.275em;
-  margin-bottom: 0.85em;
   font-weight: 700;
 }
 .markdown-section h1 {
