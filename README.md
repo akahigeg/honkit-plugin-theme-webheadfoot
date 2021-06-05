@@ -1,10 +1,9 @@
-# HonKit Default Theme
+# HonKit Theme for common website.
 
-This is the default theme for HonKit.
-
-It can be used as a template for theming books or can be extended.
-
-![Image](./preview.png)
+## Feature
+- Header
+- Footer
+- Responsive
 
 ## License
 
