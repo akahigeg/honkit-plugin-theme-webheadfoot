@@ -54,17 +54,17 @@ a {
 .book.is-loading .book-header h1 a {
   display: none;
 }
-.book-header h2 {
-  color: #333;
-  font-size: 24px;
-  line-height: 50px;
-  color: #333;
-}
+
 @media print {
-  .book-header {
+  .page-header {
     display: none;
   }
 }
+
+.book-footer {
+  margin-top: 30px;
+}
+
 .book-summary {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-y: auto;
@@ -77,9 +77,6 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-transition: top 0.5s ease;
-  -moz-transition: top 0.5s ease;
-  -o-transition: top 0.5s ease;
   transition: top 0.5s ease;
 }
 .book-summary ul.summary li {
@@ -213,13 +210,19 @@ a {
     position: static;
   }
 }
-.page-wrapper {
-  position: relative;
-  outline: 0;
+
+.page {
 }
-.page-inner {
-  position: relative;
+.page_inner {
 }
+
+.page-header h2 {
+  color: #333;
+  font-size: 24px;
+  line-height: 50px;
+  color: #333;
+}
+
 .markdown-section {
   display: block;
   word-wrap: break-word;
