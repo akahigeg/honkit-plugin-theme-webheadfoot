@@ -11,8 +11,8 @@
     - .book-header
     - .page
       - .page_inner
-        - .page-header
         - .page-body
+          - h2
     - .book-footer
 
 ## TODO
