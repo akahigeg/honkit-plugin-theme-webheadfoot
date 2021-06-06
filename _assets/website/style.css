@@ -155,7 +155,7 @@ a {
   .book-summary {
     display: none;
   }
-  .book_inner {
+  .book-body {
     left: 0;
   }
 }
@@ -165,7 +165,7 @@ a {
   height: 100%;
 }
 @media screen and (min-width: 600px) {
-  .book.with-summary .book_inner {
+  .book.with-summary .book-body {
     left: 300px;
   }
 }
@@ -173,28 +173,28 @@ a {
   .book.with-summary {
     overflow: hidden;
   }
-  .book.with-summary .book_inner {
+  .book.with-summary .book-body {
     transform: translate(calc(100% - 60px), 0);
   }
 }
-.book.without-animation .book_inner {
+.book.without-animation .book-body {
   transition: none !important;
 }
-.book_inner {
+.book-body {
   color: #000;
   background: #fff;
 
   max-width: 800px;
   margin: 0 auto;
 }
-.book_inner .body-inner {
+.book-body .body-inner {
 }
 @media screen and (max-width: 1240px) {
-  .book_inner {
+  .book-body {
     transition: transform 250ms ease;
     padding-bottom: 20px;
   }
-  .book_inner .body-inner {
+  .book-body .body-inner {
     position: static;
     min-height: calc(100% - 50px);
   }
@@ -203,20 +203,21 @@ a {
   .book {
     position: static;
   }
-  .book_inner {
+  .book-body {
     position: static;
   }
-  .book_inner .body-inner {
+  .book-body .body-inner {
     position: static;
   }
 }
 
-.page {
-}
-.page_inner {
+.page-wrapper {
 }
 
-.page h2 {
+.page-inner {
+}
+
+.page-inner h2 {
   color: #333;
   font-size: 24px;
   line-height: 50px;

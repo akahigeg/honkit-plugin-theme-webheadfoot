@@ -35,8 +35,8 @@
 
 {% block body %}
 <div class="book">
-    <div class="book_inner">
-        {% block book_inner %}
+    <div class="book-body">
+        {% block book_body %}
             <div class="page">
                 {% block page %}
                     {% block book_header %}
@@ -53,17 +53,15 @@
                       {% block search_input %}{% endblock %}
                     </div>
 
-                    <div class="page" tabindex="-1" role="main">
-                        <div class="page_inner">
-                          <div class="page-body">
-                              {% block search_results %}
-                                  <section class="normal markdown-section">
-                                  {% block page_body %}
-                                  {{ page.content|safe }}
-                                  {% endblock %}
-                                  </section>
-                              {% endblock %}
-                          </div>
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            {% block search_results %}
+                                <section class="normal markdown-section">
+                                {% block page_body %}
+                                {{ page.content|safe }}
+                                {% endblock %}
+                                </section>
+                            {% endblock %}
                         </div>
                     </div>
 
