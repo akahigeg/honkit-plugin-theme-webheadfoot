@@ -24,6 +24,8 @@ a {
   font-size: 0.85em;
   color: #7e888b;
   background: 0 0;
+  display: flex;
+  justify-content: space-between;
 }
 .book-header h1 {
   margin: 0;
